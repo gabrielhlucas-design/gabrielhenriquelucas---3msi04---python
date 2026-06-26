@@ -8,8 +8,8 @@ def CadastroCandidato():
     num3=int(input("Digite o número do terceiro candidato: "))
     return n1, num1, n2, num2, n3, num3
 
-n1, num1, n2, num2, n3, num3 = CadastroCandidato() #Retira da função
-while num1==num2 and num1==num3:
+n1, num1, n2, num2, n3, num3 = CadastroCandidato()
+while num1==num2 or num1==num3 or num2==num1 or num2==num3 and num3==num1 or num3==num2:
     print("Candidatos iguais, digite novamente!!!")
     CadastroCandidato()
 print("Sucesso!!! Candidatos Cadastrados e nenhum numero repetido!")
